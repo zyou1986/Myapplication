@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_marginTop="48px"
+        android:id="@+id/image1"
+        android:src="@drawable/aa1"
+        android:layout_width="342px"
+        android:layout_height="342px" />
+
+    <EditText
+        android:focusable="false"
+        android:background="@null"
+        android:id="@+id/exittext11"
+        android:layout_marginTop="50px"
+        android:paddingLeft="108px"
+        android:paddingRight="108px"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="32px"
+        android:gravity="center_horizontal"
+        android:textColor="#333333"
+        android:text="需求过旺调价提醒"
+        android:lineSpacingExtra="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:focusable="false"
+        android:background="@null"
+        android:id="@+id/exittext1"
+        android:layout_marginTop="34px"
+        android:paddingLeft="108px"
+        android:paddingRight="108px"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="24px"
+        android:gravity="center_horizontal"
+        android:textColor="#666666"
+        android:text="雨雪天司机很辛苦，平台为您调价以便尽快叫到司机，实际支付以服务结束计费为准哦。"
+        android:lineSpacingExtra="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="50px"
+        android:layout_marginRight="108px"
+        android:layout_marginLeft="108px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1.0"
+            android:layout_marginRight="10px"
+            android:background="#828282">
+
+        </View>
+
+
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="调价倍率"
+            android:textColor="#adadad"/>
+
+
+
+
+        <View
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="10px"
+            android:background="#828282">
+
+        </View>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="108px"
+        android:layout_marginRight="108px">
+
+
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8903"
+            android:textSize="28px"
+            android:text="x"
+            android:layout_marginRight="8px"/>
+
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8903"
+            android:textSize="68px"
+            android:text="1.5" />
+
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8903"
+            android:textSize="28px"
+            android:text="倍,调价后约" />
+
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8903"
+            android:textSize="68px"
+            android:text="28.5" />
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8903"
+            android:textSize="28px"
+            android:text="元" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="114px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="108px"
+            android:layout_marginRight="108px"
+            android:background="@drawable/edittext_selector_1_bg"
+            android:textColor="@drawable/edittext_selector_1_color"
+            android:text="我接受调价，确认呼叫代驾"/>
+
+        <TextView
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="24px"
+            android:layout_marginRight="108px"
+            android:layout_marginLeft="108px"
+            android:layout_marginBottom="98px"
+            android:background="@drawable/edittext_selector_2_bg"
+            android:textColor="@drawable/edittext_selector_2_color"
+            android:text="暂时不接受调价，稍后再试"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

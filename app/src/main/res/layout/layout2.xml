@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="中间"
+        android:id="@+id/tv1"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+    <TextView
+        android:text="左上"
+        android:id="@+id/tvzs"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+
+    <TextView
+        android:text="you上"
+        android:id="@+id/tvys"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+    <TextView
+        android:text="youxia"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+    <TextView
+        android:text="注册"
+        android:id="@+id/zhuce"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+    <TextView
+        android:text="above"
+        android:id="@+id/tvab"
+        android:gravity="center"
+        android:layout_above="@id/tv1"
+        android:layout_alignLeft="@id/tv1"
+        android:layout_alignRight="@id/tv1"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+    <TextView
+        android:text="below"
+        android:gravity="center"
+        android:id="@+id/textViewbelow"
+        android:layout_below="@id/tv1"
+        android:layout_alignLeft="@id/tv1"
+        android:layout_alignRight="@id/tv1"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+
+    <TextView
+        android:text="left"
+        android:id="@+id/tvleft"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/tv1"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_alignTop="@id/tv1"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+
+    <TextView
+        android:text="right"
+        android:id="@+id/tvright"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_alignTop="@id/tv1"
+        android:layout_width="333px"
+        android:layout_height="333px">
+    </TextView>
+
+</RelativeLayout>
