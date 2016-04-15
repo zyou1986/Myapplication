@@ -187,7 +187,7 @@
             android:layout_marginBottom="98px"
             android:background="@drawable/edittext_selector_2_bg"
             android:textColor="@drawable/edittext_selector_2_color"
-            android:text="暂时不接受调价，稍后再试"/>
+            android:text="暂时不接受调价，稍后再试。"/>
 
     </LinearLayout>
 
