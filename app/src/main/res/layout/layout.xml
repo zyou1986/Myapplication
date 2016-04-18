@@ -174,7 +174,7 @@
             android:layout_marginRight="108px"
             android:background="@drawable/edittext_selector_1_bg"
             android:textColor="@drawable/edittext_selector_1_color"
-            android:text="接受调价，确认呼叫代驾"/>
+            android:text="俺接受调价，确认呼叫代驾"/>
 
         <TextView
             android:clickable="true"
