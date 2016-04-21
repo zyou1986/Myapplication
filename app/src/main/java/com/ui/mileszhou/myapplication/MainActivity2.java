@@ -125,7 +125,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void onEventMainThread(FirstEvent event) {
 
-        String msg = "使用onEventMainThread收到了消息a ：" + event.getMsg();
+        String msg = "使用onEventMainThread收到了消息a b：" + event.getMsg();
         Log.d("harvic", msg);
         text_view_ab.setText(msg);
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
