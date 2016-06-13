@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import de.greenrobot.event.EventBus;
 
@@ -16,7 +15,7 @@ public class MainActivity3 extends Activity {
     long sum =0;
     private TextView text_view = null;
     private TextView text_view2 = null;
-    private Button start = null;
+    private Button starthah = null;
     private Button end = null;
     private Button ps_event = null;
     
@@ -38,22 +37,21 @@ public class MainActivity3 extends Activity {
         public void run()
         {
             Log.i("http_thread", "哈哈哈哈");
-           final  String s="这是response";
+           final  String s="这这这是response";
 
-            Runnable reflash=new Runnable() {
-                @Override
-                public void run() {
+//            Runnable reflash=new Runnable() {
+//                @Override
+//                public void run() {
                     text_view.setText(s+": "+i);
                     i++;
 
                     for(long j=0;j<9000000;j++){
                         sum =sum+j;
-                    }
-                    Toast toast=Toast.makeText(getApplicationContext(),"2223232", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
+//                    }
+//
+//                }
             };
-        handler.post(reflash);
+//        handler.post(reflash);
         }
 
     };
@@ -69,11 +67,11 @@ public class MainActivity3 extends Activity {
         handler.post(http_thread1);
 
 
-        start = (Button)findViewById(R.id.start);
-        start.setOnClickListener(new View.OnClickListener() {
+        starthah = (Button)findViewById(R.id.starthah);
+        starthah.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-
-                http_thread2.run();//  直接run是在子线程。
+                handler.post(http_thread2);
+//                http_thread2.run();//  直接run是在子线程。
             }
 
         });

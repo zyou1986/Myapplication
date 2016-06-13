@@ -18,7 +18,7 @@
         android:textColor="#000000"
         tools:context=".MainActivity" />
     <Button
-        android:id="@+id/start"
+        android:id="@+id/starthah"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="run"

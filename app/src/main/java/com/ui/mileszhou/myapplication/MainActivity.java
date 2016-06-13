@@ -14,8 +14,11 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends AppCompatActivity {
-
+    private  static  final  String TAG="MainActivity";
     public static RequestQueue mQueue;
+//    private FirstCpu firstCpu;
+    private long AppCpuTime;
+    private long ToatlCpuTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -59,10 +62,12 @@ public class MainActivity extends AppCompatActivity {
 //
 //                mQueue.add(jsonObjectRequest);
 
-                Toast.makeText(getApplication(),"",Toast.LENGTH_SHORT).show();
+
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
+
+
             }
         });
 
@@ -72,10 +77,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-         Toast.makeText(getApplicationContext(), "onResume", Toast.LENGTH_SHORT).show();
+        ToatlCpuTime=FirstCpu.getTotalCpuTime();
+        AppCpuTime=FirstCpu.getAppCpuTime();
+
+        Log.d(TAG,"ToatlCpuTime: "+ToatlCpuTime);
+        Log.d(TAG,"AppCpuTime: "+AppCpuTime);
+        Log.d(TAG,"getProcessCpuRate: "+FirstCpu.getProcessCpuRate());
+         Toast.makeText(getApplicationContext(), TAG, Toast.LENGTH_SHORT).show();
 //显示toast信息
         String time1 = DateUtils.formatElapsedTime(0);
-        Log.d("zyzy","onResume at:"+time1);
+        Log.d(TAG,"onResume at:"+time1);
     }
 
     @Override
@@ -84,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onPause", Toast.LENGTH_SHORT).show();
 //显示toast信息
 
-        Log.d("zyzy", "onPause_MainActivity");
+        Log.d(TAG, "onPause_MainActivity");
     }
 
     @Override
@@ -93,6 +104,6 @@ public class MainActivity extends AppCompatActivity {
         Toast toast=Toast.makeText(getApplicationContext(), "onDestroy", Toast.LENGTH_SHORT);
 //显示toast信息
         toast.show();
-        Log.d("zyzy", "onDestroy_MainActivity");
+        Log.d(TAG, "onDestroy_MainActivity");
     }
 }
